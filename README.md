@@ -2,6 +2,7 @@
 > **iPhone 震动反馈封装**
 
 ```swift
+    /* iPhone 7、7 Plus 机型独有的震动反馈模式 */
     @IBAction func playNotificationSuccessSound(_ sender: UIButton) {
         HapticFeedback.notification.successSound()
         HapticFeedback.notification.success()
@@ -38,16 +39,19 @@
         HapticFeedback.selection.selectionSound()
         HapticFeedback.selection.selection()
     }
+    /* ------------------------------------------------------------ */
     
-    
+    // 3D Touch Peek
     @IBAction func peek(_ sender: UIButton) {
          TapticEngine.feedback.peek()
     }
     
+    // 3D Touch Pop
     @IBAction func pop(_ sender: UIButton) {
         TapticEngine.feedback.pop()
     }
     
+    // 连续三次短震
     @IBAction func error(_ sender: UIButton) {
         TapticEngine.feedback.error()
     }

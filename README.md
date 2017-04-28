@@ -43,22 +43,22 @@
     
     // 3D Touch Peek
     @IBAction func peek(_ sender: UIButton) {
-         TapticEngine.feedback.peek()
+        HapticFeedback.forceTouch.peek()
     }
     
     // 3D Touch Pop
     @IBAction func pop(_ sender: UIButton) {
-        TapticEngine.feedback.pop()
+        HapticFeedback.forceTouch.pop()
     }
     
     // 连续三次短震
     @IBAction func error(_ sender: UIButton) {
-        TapticEngine.feedback.error()
+        HapticFeedback.forceTouch.error()
     }
     
     // 普通震动
     @IBAction func vibration(_ sender: UIButton) {
-        Vibration.feedback.vibration()
+        HapticFeedback.vibration.vibration()
     }
 ```
 

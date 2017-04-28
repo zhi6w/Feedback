@@ -37,7 +37,12 @@ open class HapticFeedback {
     @available(iOS 10.0, *)
     open static let selection = Selection()
     
-
+    @available(iOS 9.0, *)
+    open static let forceTouch = ForceTouch()
+    
+    open static let vibration = Vibration()
+    
+    
     @available(iOS 10.0, *)
     open class Notification {
         
@@ -148,11 +153,9 @@ open class HapticFeedback {
 }
 
 
-/// Taptic Engine 震动反馈（适用于 iPhone 6s、6s Plus 及其以上机型）
-open class TapticEngine {
-    
-    open static let feedback = TapticEngine()
-    
+/// Force Touch 震动反馈（适用于 iPhone 6s、6s Plus 及其以上机型）
+@available(iOS 9.0, *)
+open class ForceTouch {
     
     open func peek() {
         AudioServicesPlaySystemSound(1519)
@@ -171,9 +174,6 @@ open class TapticEngine {
 
 /// 普通震动反馈
 open class Vibration {
-    
-    open static let feedback = Vibration()
-    
     
     open func vibration() {
         AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)

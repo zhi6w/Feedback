@@ -51,20 +51,20 @@ class ViewController: UIViewController {
     
     
     @IBAction func peek(_ sender: UIButton) {
-         TapticEngine.feedback.peek()
+        HapticFeedback.forceTouch.peek()
     }
     
     @IBAction func pop(_ sender: UIButton) {
-        TapticEngine.feedback.pop()
+        HapticFeedback.forceTouch.pop()
     }
     
     @IBAction func error(_ sender: UIButton) {
-        TapticEngine.feedback.error()
+        HapticFeedback.forceTouch.error()
     }
     
     // 普通震动
     @IBAction func vibration(_ sender: UIButton) {
-        Vibration.feedback.vibration()
+        HapticFeedback.vibration.vibration()
     }
     
 }

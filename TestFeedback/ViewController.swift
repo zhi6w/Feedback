@@ -10,61 +10,61 @@ import UIKit
 import HapticFeedbackKit
 
 class ViewController: UIViewController {
-
+    
     
     @IBAction func playNotificationSuccessSound(_ sender: UIButton) {
-        HapticFeedback.notification.successSound()
-        HapticFeedback.notification.success()
+        HapticFeedback.Notification.successSound()
+        HapticFeedback.Notification.success()
     }
     
     @IBAction func playNotificationWarningSound(_ sender: UIButton) {
-        HapticFeedback.notification.warningSound()
-        HapticFeedback.notification.warning()
+        HapticFeedback.Notification.warningSound()
+        HapticFeedback.Notification.warning()
     }
     
     @IBAction func playNotificationErrorSound(_ sender: UIButton) {
-        HapticFeedback.notification.errorSound()
-        HapticFeedback.notification.error()
+        HapticFeedback.Notification.errorSound()
+        HapticFeedback.Notification.error()
     }
     
     
     @IBAction func playImpactLightSound(_ sender: UIButton) {
-        HapticFeedback.impact.lightSound()
-        HapticFeedback.impact.light()
+        HapticFeedback.Impact.lightSound()
+        HapticFeedback.Impact.light()
     }
     
     @IBAction func playImpactMediumSound(_ sender: UIButton) {
-        HapticFeedback.impact.mediumSound()
-        HapticFeedback.impact.medium()
+        HapticFeedback.Impact.mediumSound()
+        HapticFeedback.Impact.medium()
     }
     
     @IBAction func playImpactHeavySound(_ sender: UIButton) {
-        HapticFeedback.impact.heavySound()
-        HapticFeedback.impact.heavy()
+        HapticFeedback.Impact.heavySound()
+        HapticFeedback.Impact.heavy()
     }
     
     
     @IBAction func playSelectionSound(_ sender: UIButton) {
-        HapticFeedback.selection.selectionSound()
-        HapticFeedback.selection.selection()
+        HapticFeedback.Selection.selectionSound()
+        HapticFeedback.Selection.selection()
     }
     
     
     @IBAction func peek(_ sender: UIButton) {
-        HapticFeedback.forceTouch.peek()
+        HapticFeedback.peek()
     }
     
     @IBAction func pop(_ sender: UIButton) {
-        HapticFeedback.forceTouch.pop()
+        HapticFeedback.pop()
     }
     
     @IBAction func error(_ sender: UIButton) {
-        HapticFeedback.forceTouch.error()
+        HapticFeedback.error()
     }
     
     // 普通震动
     @IBAction func vibration(_ sender: UIButton) {
-        HapticFeedback.vibration.vibration()
+        HapticFeedback.vibration()
     }
     
 }

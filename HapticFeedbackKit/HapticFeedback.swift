@@ -29,96 +29,83 @@ fileprivate func playSound(forResource: String) {
 open class HapticFeedback {
     
     @available(iOS 10.0, *)
-    open static let notification = Notification()
-    
-    @available(iOS 10.0, *)
-    open static let impact = Impact()
-    
-    @available(iOS 10.0, *)
-    open static let selection = Selection()
-    
-    @available(iOS 9.0, *)
-    open static let forceTouch = ForceTouch()
-    
-    open static let vibration = Vibration()
-    
-    
-    @available(iOS 10.0, *)
-    open class Notification {
+    public struct Notification {
         
-        let generator: UINotificationFeedbackGenerator = {
+        fileprivate static var generator: UINotificationFeedbackGenerator = {
             let generator = UINotificationFeedbackGenerator()
             generator.prepare()
             
             return generator
         }()
         
+        public static func function() {
+            print(generator)
+        }
         
-        open func successSound() {
+        public static func successSound() {
             playSound(forResource: "success")
         }
         
-        open func warningSound() {
+        public static func warningSound() {
             playSound(forResource: "warning")
         }
         
-        open func errorSound() {
+        public static func errorSound() {
             playSound(forResource: "error")
         }
-
         
-        open func success() {
+        
+        public static func success() {
             occurred(.success)
         }
         
-        open func warning() {
+        public static func warning() {
             occurred(.warning)
         }
         
-        open func error() {
+        public static func error() {
             occurred(.error)
         }
         
-        fileprivate func occurred(_ notificationType: UINotificationFeedbackType) {
+        fileprivate static func occurred(_ notificationType: UINotificationFeedbackType) {
             generator.notificationOccurred(notificationType)
             generator.prepare()
         }
         
     }
     
-    
     @available(iOS 10.0, *)
-    open class Impact {
+    public struct Impact {
         
-        var generator: UIImpactFeedbackGenerator?
+        fileprivate static var generator: UIImpactFeedbackGenerator?
         
         
-        open func lightSound() {
+        public static func lightSound() {
             playSound(forResource: "impact_light")
         }
         
-        open func mediumSound() {
+        public static func mediumSound() {
             playSound(forResource: "impact_medium")
         }
         
-        open func heavySound() {
+        public static func heavySound() {
             playSound(forResource: "impact_heavy")
         }
-
         
-        open func light() {
+        
+        public static func light() {
             impactOccurred(.light)
         }
         
-        open func medium() {
+        public static func medium() {
             impactOccurred(.medium)
         }
         
-        open func heavy() {
+        public static func heavy() {
             impactOccurred(.heavy)
         }
         
-        fileprivate func impactOccurred(_ style: UIImpactFeedbackStyle) {
+        fileprivate static func impactOccurred(_ style: UIImpactFeedbackStyle) {
             generator = UIImpactFeedbackGenerator(style: style)
             generator?.prepare()
             generator?.impactOccurred()
@@ -126,11 +113,10 @@ open class HapticFeedback {
         
     }
     
-    
     @available(iOS 10.0, *)
-    open class Selection {
+    public struct Selection {
         
-        let generator: UISelectionFeedbackGenerator = {
+        fileprivate static var generator: UISelectionFeedbackGenerator = {
             let generator = UISelectionFeedbackGenerator()
             generator.prepare()
             
@@ -138,44 +124,34 @@ open class HapticFeedback {
         }()
         
         
-        open func selectionSound() {
+        public static func selectionSound() {
             playSound(forResource: "selection")
         }
         
         
-        open func selection() {
+        public static func selection() {
             generator.selectionChanged()
             generator.prepare()
         }
         
     }
     
-}
-
-
-/// Force Touch 震动反馈（适用于 iPhone 6s、6s Plus 及其以上机型）
-@available(iOS 9.0, *)
-open class ForceTouch {
-    
-    open func peek() {
+    @available(iOS 9.0, *)
+    open class func peek() {
         AudioServicesPlaySystemSound(1519)
     }
     
-    open func pop() {
+    @available(iOS 9.0, *)
+    open class func pop() {
         AudioServicesPlaySystemSound(1520)
     }
     
-    open func error() {
+    @available(iOS 9.0, *)
+    open class func error() {
         AudioServicesPlaySystemSound(1521)
     }
     
-}
-
-
-/// 普通震动反馈
-open class Vibration {
-    
-    open func vibration() {
+    open class func vibration() {
         AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
     }
     

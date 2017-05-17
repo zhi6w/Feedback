@@ -29,7 +29,7 @@ fileprivate func playSound(forResource: String) {
 open class HapticFeedback {
     
     @available(iOS 10.0, *)
-    public struct Notification {
+    public enum Notification {
         
         fileprivate static var generator: UINotificationFeedbackGenerator = {
             let generator = UINotificationFeedbackGenerator()
@@ -75,7 +75,7 @@ open class HapticFeedback {
     }
     
     @available(iOS 10.0, *)
-    public struct Impact {
+    public enum Impact {
         
         fileprivate static var generator: UIImpactFeedbackGenerator?
         
@@ -114,7 +114,7 @@ open class HapticFeedback {
     }
     
     @available(iOS 10.0, *)
-    public struct Selection {
+    public enum Selection {
         
         fileprivate static var generator: UISelectionFeedbackGenerator = {
             let generator = UISelectionFeedbackGenerator()

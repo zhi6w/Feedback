@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,60 +22,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cgB-yS-gXY">
-                                <rect key="frame" x="63" y="36" width="248" height="348"/>
+                                <rect key="frame" x="101.5" y="36" width="171" height="348"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PN1-Eh-ITC">
-                                        <rect key="frame" x="0.0" y="0.0" width="248" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="171" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Notification.Success Sound"/>
+                                        <state key="normal" title="Notification.Succes"/>
                                         <connections>
                                             <action selector="playNotificationSuccessSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0KP-g6-rrS"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tvz-mh-ZHr">
-                                        <rect key="frame" x="0.0" y="52" width="248" height="36"/>
+                                        <rect key="frame" x="0.0" y="52" width="171" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Notification.Warning Sound"/>
+                                        <state key="normal" title="Notification.Warnin"/>
                                         <connections>
                                             <action selector="playNotificationWarningSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="byY-vu-W8s"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmB-nc-xOt">
-                                        <rect key="frame" x="0.0" y="104" width="248" height="36"/>
+                                        <rect key="frame" x="0.0" y="104" width="171" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Notification.Error Sound"/>
+                                        <state key="normal" title="Notification.Error"/>
                                         <connections>
                                             <action selector="playNotificationErrorSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J7c-O7-CUd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMw-zm-5su">
-                                        <rect key="frame" x="0.0" y="156" width="248" height="36"/>
+                                        <rect key="frame" x="0.0" y="156" width="171" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Impact.Light Sound"/>
+                                        <state key="normal" title="Impact.Light"/>
                                         <connections>
                                             <action selector="playImpactLightSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PQH-tK-HHD"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCz-nC-Jxb">
-                                        <rect key="frame" x="0.0" y="208" width="248" height="36"/>
+                                        <rect key="frame" x="0.0" y="208" width="171" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Impact.Medium Sound"/>
+                                        <state key="normal" title="Impact.Medium"/>
                                         <connections>
                                             <action selector="playImpactMediumSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZw-Qf-xEZ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEa-Xz-nsW">
-                                        <rect key="frame" x="0.0" y="260" width="248" height="36"/>
+                                        <rect key="frame" x="0.0" y="260" width="171" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Impact.Heavy Sound"/>
+                                        <state key="normal" title="Impact.Heavy"/>
                                         <connections>
                                             <action selector="playImpactHeavySound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iae-cZ-fuR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDS-fd-4xj">
-                                        <rect key="frame" x="0.0" y="312" width="248" height="36"/>
+                                        <rect key="frame" x="0.0" y="312" width="171" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Selection Sound"/>
+                                        <state key="normal" title="Selection"/>
                                         <connections>
                                             <action selector="playSelectionSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jXW-Fh-Sve"/>
                                         </connections>
@@ -83,10 +83,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5m1-xx-K4T">
-                                <rect key="frame" x="147" y="414" width="81" height="192"/>
+                                <rect key="frame" x="148" y="414" width="79" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Is-gT-KKz">
-                                        <rect key="frame" x="0.0" y="0.0" width="81" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="79" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Peek"/>
                                         <connections>
@@ -94,7 +94,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpS-yE-fqR">
-                                        <rect key="frame" x="0.0" y="52" width="81" height="36"/>
+                                        <rect key="frame" x="0.0" y="52" width="79" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Pop"/>
                                         <connections>
@@ -102,7 +102,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mp-Hf-5sl">
-                                        <rect key="frame" x="0.0" y="104" width="81" height="36"/>
+                                        <rect key="frame" x="0.0" y="104" width="79" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Error"/>
                                         <connections>
@@ -110,7 +110,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FJ-WB-H6C">
-                                        <rect key="frame" x="0.0" y="156" width="81" height="36"/>
+                                        <rect key="frame" x="0.0" y="156" width="79" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Vibration"/>
                                         <connections>
